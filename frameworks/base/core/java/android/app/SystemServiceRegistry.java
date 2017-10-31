@@ -12,6 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+
  */
 
 package android.app;
@@ -100,6 +101,7 @@ import android.os.IUserManager;
 import android.os.PowerManager;
 import android.os.Process;
 import android.os.RecoverySystem;
+import android.os.FooServiceManager;
 import android.os.ServiceManager;
 import android.os.SystemVibrator;
 import android.os.UserHandle;
@@ -485,6 +487,14 @@ final class SystemServiceRegistry {
             @Override
             public Vibrator createService(ContextImpl ctx) {
                 return new SystemVibrator(ctx);
+            }});
+
+	// FooService registration by Ryan McCoppin..
+        registerService(Context.FOO_SERVICE, FooServiceManager.class,
+                new CachedServiceFetcher<FooServiceManager>() {
+            @Override
+            public FooServiceManager createService(ContextImpl ctx) {
+                return new FooServiceManager(ctx);
             }});
 
         registerService(Context.WALLPAPER_SERVICE, WallpaperManager.class,

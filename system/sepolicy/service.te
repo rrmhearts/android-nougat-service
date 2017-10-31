@@ -92,6 +92,7 @@ type procstats_service, app_api_service, system_server_service, service_manager_
 type recovery_service, system_server_service, service_manager_type;
 type registry_service, app_api_service, system_server_service, service_manager_type;
 type restrictions_service, app_api_service, system_server_service, service_manager_type;
+type foo_service, system_api_service, system_server_service, service_manager_type;
 type rttmanager_service, app_api_service, system_server_service, service_manager_type;
 type samplingprofiler_service, system_server_service, service_manager_type;
 type scheduling_policy_service, system_server_service, service_manager_type;

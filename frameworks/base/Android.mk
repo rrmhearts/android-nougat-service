@@ -234,6 +234,7 @@ LOCAL_SRC_FILES += \
 	core/java/android/os/IRecoverySystem.aidl \
 	core/java/android/os/IRecoverySystemProgressListener.aidl \
 	core/java/android/os/IRemoteCallback.aidl \
+	core/java/android/os/IFooService.aidl \
 	core/java/android/os/ISchedulingPolicyService.aidl \
 	core/java/android/os/IUpdateLock.aidl \
 	core/java/android/os/IUserManager.aidl \

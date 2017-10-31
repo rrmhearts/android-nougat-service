@@ -2660,6 +2660,7 @@ public abstract class Context {
             STORAGE_SERVICE,
             WALLPAPER_SERVICE,
             VIBRATOR_SERVICE,
+	    FOO_SERVICE,
             //@hide: STATUS_BAR_SERVICE,
             CONNECTIVITY_SERVICE,
             //@hide: UPDATE_LOCK_SERVICE,
@@ -2822,6 +2823,8 @@ public abstract class Context {
      * @see android.os.storage.StorageManager
      * @see #VIBRATOR_SERVICE
      * @see android.os.Vibrator
+     * @see #FOO_SERVICE
+     * @see android.os.FooServiceManager
      * @see #CONNECTIVITY_SERVICE
      * @see android.net.ConnectivityManager
      * @see #WIFI_SERVICE
@@ -3069,6 +3072,17 @@ public abstract class Context {
      */
     public static final String VIBRATOR_SERVICE = "vibrator";
 
+    /**
+     * Use with {@link #getSystemService} to retrieve a {@link
+     * android.os.FooServiceManager} for interacting with the foo hardware.
+     *
+     * @see #getSystemService
+     * @see android.os.FooServiceManager
+
+     * Author: Ryan McCoppin
+     */
+
+    public static final String FOO_SERVICE = "foo";
     /**
      * Use with {@link #getSystemService} to retrieve a {@link
      * android.app.StatusBarManager} for interacting with the status bar.

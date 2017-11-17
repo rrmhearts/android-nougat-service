@@ -1,6 +1,8 @@
 # android-nougat-service
 This is an example system service for Android 7.1 Nougat. There are no updated examples for Nougat and onward, so I thought I would contribute for everyone. This is for AOSP development, not application development
 
+Look at the commit "*Foo system service init*" to see an excellent Diff of the implementation.
+
 ## How-To
 Add the necessary files. Ensure that you modify the files that already exist in your system, do not just overwrite them! For instance, /frameworks/base/Android.mk needs one line added to your system.
 
